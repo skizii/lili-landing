@@ -1,0 +1,28 @@
+<svg width="26.000000" height="26.000000" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2385_102525">
+			<rect id="Car" width="26.000000" height="26.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Car" width="26.000000" height="26.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2385_102525)">
+		<g opacity="0.200000">
+			<path id="Vector" d="M22.75 17.3867L22.75 19.8242C22.75 20.0391 22.6641 20.2461 22.5156 20.3984C22.3594 20.5508 22.1562 20.6367 21.9375 20.6367L19.5 20.6367C19.2812 20.6367 19.0781 20.5508 18.9219 20.3984C18.7734 20.2461 18.6875 20.0391 18.6875 19.8242L18.6875 17.3867L22.75 17.3867Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<g opacity="0.200000">
+			<path id="Vector" d="M7.30469 17.3867L7.30469 19.8242C7.30469 20.0391 7.21875 20.2461 7.07031 20.3984C6.91406 20.5508 6.71094 20.6367 6.49219 20.6367L4.05469 20.6367C3.83594 20.6367 3.63281 20.5508 3.47656 20.3984C3.32812 20.2461 3.24219 20.0391 3.24219 19.8242L3.24219 17.3867L7.30469 17.3867Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<g opacity="0.200000">
+			<path id="Vector" d="M22.7422 10.8867L19.7031 4.05664C19.6406 3.91211 19.5391 3.79102 19.4062 3.70508C19.2734 3.61914 19.125 3.57422 18.9609 3.57422L7.02344 3.57422C6.85938 3.57422 6.71094 3.61914 6.57812 3.70508C6.44531 3.79102 6.34375 3.91211 6.28125 4.05664L3.24219 10.8867L22.7422 10.8867Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<path id="Vector" d="M1.625 10.8867L24.375 10.8867" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="0.735294" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M22.75 17.3867L22.75 19.8242C22.75 20.0391 22.6641 20.2461 22.5156 20.3984C22.3594 20.5508 22.1562 20.6367 21.9375 20.6367L19.5 20.6367C19.2812 20.6367 19.0781 20.5508 18.9219 20.3984C18.7734 20.2461 18.6875 20.0391 18.6875 19.8242L18.6875 17.3867" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="0.735294" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M7.30469 17.3867L7.30469 19.8242C7.30469 20.0391 7.21875 20.2461 7.07031 20.3984C6.91406 20.5508 6.71094 20.6367 6.49219 20.6367L4.05469 20.6367C3.83594 20.6367 3.63281 20.5508 3.47656 20.3984C3.32812 20.2461 3.24219 20.0391 3.24219 19.8242L3.24219 17.3867" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="0.735294" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M6.5 14.1367L8.125 14.1367" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="0.735294" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M17.875 14.1367L19.5 14.1367" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="0.735294" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M19.7031 4.05664C19.6406 3.91211 19.5391 3.79102 19.4062 3.70508C19.2734 3.61914 19.125 3.57422 18.9609 3.57422L7.02344 3.57422C6.85938 3.57422 6.71094 3.61914 6.57812 3.70508C6.44531 3.79102 6.34375 3.91211 6.28125 4.05664L3.24219 10.8867L3.24219 17.3867L22.7422 17.3867L22.7422 10.8867L19.7031 4.05664Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="0.735294" stroke-linejoin="round"/>
+	</g>
+</svg>

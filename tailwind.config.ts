@@ -16,6 +16,13 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-plus-jakarta-sans)']
       },
+      colors: {
+        main: '#282C32',
+        white: '#FFFFFF',
+        secondary: '#A9B0BA',
+        tags: '#F6F7F7',
+        accent: '#F9BF42',
+      }
     },
   },
   plugins: [],
