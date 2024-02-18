@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const plus_jakarta_sans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-plus-jakarta-sans'
+})
 
 export const metadata: Metadata = {
   title: "lili",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-main h-screen`}>{children}</body>
+      <body className={`${plus_jakarta_sans.variable} bg-main bg-bottom h-screen bg-net-pattern bg-no-repeat bg-repeat-x text-white`}>{children}</body>
     </html>
   );
 }
