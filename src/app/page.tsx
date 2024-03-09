@@ -4,6 +4,7 @@ import Title from "@/components/title";
 import Subtitle from "@/components/subtitle";
 import StoreLink from "@/components/store-link";
 import PhoneImage from "@/components/phoneImage";
+import Bubbles from "@/components/bubbles";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Subtitle/>
       <StoreLink link="#"/>
     </main>
+    <Bubbles/>
     <PatternLeft/>
     <PatternRight/>
     <PhoneImage/>
