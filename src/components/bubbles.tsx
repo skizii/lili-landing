@@ -8,7 +8,7 @@ import hamburger from "@/icons/hamburger.svg";
 
 const Bubbles = () => {
 	return (
-		<div className="absolute top-0 left-0 h-full w-full">
+		<div className="absolute top-0 left-0 h-full w-full -z-10">
 			<Bubble size={68} top={10} left={20} icon={car}/>
 			<Bubble size={58} top={12} left={75} icon={cart}/>
 			<Bubble size={58} top={38} left={65} icon={buildings}/>
