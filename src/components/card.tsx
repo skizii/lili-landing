@@ -34,7 +34,10 @@ const Card = ({icon, category, width, top, left, spent, split, total, comment}:
 						<p className="text-sm text-left flex items-center justify-end text-[#AAABAB]">out of -${total}</p>
 					</div>
 				</div>
-				<p className="pl-[15px] pr-[5px] py-[10px] leading-5 font-normal block w-full rounded-xl rounded-tl-none bg-[#5E5E5F]">
+				<p className="pl-[15px] pr-[5px] py-[10px] leading-5 font-normal block w-full rounded-xl rounded-tl-none bg-[#5E5E5F]
+				after:content-[''] after:absolute after:w-0 after:h-0 after:border-[20px]
+				after:border-solid after:border-transparent after:border-b-[#5E5E5F]
+				after:rotate-45 after:-z-10 after:top-[52px] after:left-[19px]">
 					{comment}
 				</p>
 			</div>
