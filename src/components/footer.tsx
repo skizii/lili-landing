@@ -1,9 +1,10 @@
 const Footer = () => {
 	return (
 		<footer className="
-		w-full mb-[20px]
+		w-[1200px] mb-[20px]
+		left-1/2 -translate-x-1/2
+		absolute bottom-0
 		flex justify-between align-center
-		mt-auto
 		text-xs text-[#BEBFC1] leading-semibold">
 			<p>&copy; 2024 lili</p>
 			<div>
