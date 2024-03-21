@@ -4,9 +4,10 @@ import { Component, createRef } from "react";
 import Qr from "./qr";
 
 class Phone extends Component {
-
+	
 	containerRef = createRef<HTMLDivElement>();
 	windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
 	state = {
 		visibleHeight: 0
 	};
@@ -32,7 +33,7 @@ class Phone extends Component {
 
 		return (
 			<>
-			{this.windowHeight <= 780 ? <Qr position="absolute" top={this.windowHeight - 155} />
+			{this.windowHeight <= 780 ? <Qr top={this.windowHeight - 155} />
 		: (<div
 			ref={this.containerRef}
 			className="
@@ -41,11 +42,9 @@ class Phone extends Component {
 			border-[9px] border-solid rounded-[56px] border-[#686B6F]
 			-z-10"
 			>
-				{visibleHeight > 0 && <Qr position="absolute" top={visibleHeight / 2} />}
+				{visibleHeight > 0 && <Qr top={visibleHeight / 2} />}
 			</div>)}
 			</>
-			
-		
 		)
 	}
 }

@@ -18,7 +18,7 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 				comment?: string}) => {
 	if (split) {
 		return (
-			<div className={cardParentClassList.join(' ')} style={{top: `${top}%`, left: `${left}%`}}>
+			<div className={cardParentClassList.join(' ')} style={{top: `${top}px`, left: `${left}px`}}>
 				<div className="mb-[12px] flex justify-between">
 					<div className="flex justify-center">
 					<Bubble size={44} icon={icon}/>
@@ -44,7 +44,7 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 		return (
 			<div 
 			className={cardParentClassList.join(' ') + " flex justify-between"}
-			style={{top: `${top}%`, left: `${left}%`}}>
+			style={{top: `${top}px`, left: `${left}px`}}>
 				<div className="flex justify-center">
 				<Bubble size={44} icon={icon}/>
 				<p className="ml-[12px] text-left flex items-center justify-left">{category}</p>

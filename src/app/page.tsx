@@ -3,7 +3,7 @@ import {PatternLeft, PatternRight} from "@/components/patterns";
 import Title from "@/components/title";
 import Subtitle from "@/components/subtitle";
 import StoreLink from "@/components/store-link";
-import Phone from "@/components/phoneImage";
+import Phone from "@/components/phone";
 import Bubbles from "@/components/bubbles";
 import Card from "@/components/card";
 import cup from "@/icons/cup.svg";
@@ -18,11 +18,13 @@ export default function Home() {
         <Title/>
         <Subtitle/>
         <StoreLink link="#"/>
-        <Phone/>
+        <div className="relative">
+          <Phone/>
+          <Card icon={hamburger} category="Food delivery" top={110} left={350} spent={96}/>
+          <Card icon={cup} category="Breakfast" top={205} left={-280} spent={25.16} split="Bogdan" total={57} comment="We went to the restaurant after a morning jog"/>
+        </div>
       </div>
       <Bubbles/>
-			<Card icon={hamburger} category="Food delivery" top={46} left={57} spent={96}/>
-			<Card icon={cup} category="Breakfast" top={58} left={26} spent={25.16} split="Bogdan" total={57} comment="We went to the restaurant after a morning jog"/>
       <PatternLeft/>
       <PatternRight/>
       <Footer/>
