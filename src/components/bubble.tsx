@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-const Bubble = ({icon, size, top, left}: {icon: string, size: number, top?: number, left?: number}) => {
+const Bubble = ({icon, size, top, left, breakpoint}: {icon: string, size: number, top?: number, left?: number, breakpoint?: string}) => {
+
 	return (
 		<div
-		className={`${top ? 'absolute' : 'relative'}  
+		className={`${top ? 'absolute' : 'relative'}
 					rounded-full 
+					${breakpoint ? breakpoint + ':hidden' : ''}
 					flex justify-center align-center
 					shadow-[inset_0_0_7px_0_rgba(112,115,118,0.53)]
 					bg-[rgba(255,255,255,0.12)]
