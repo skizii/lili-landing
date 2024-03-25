@@ -1,6 +1,9 @@
 const Title = () => {
 	return (
-		<h1 className="text-center text-[75px] leading-[110%] mt-[62px] font-semibold">Simplify Your <br /> Budget Control</h1>
+		<h1 className="
+		text-center text-[40px] sm:text-[44px] lg:text-[75px] leading-[110%] mt-[42px] lg:mt-[62px] font-semibold z-20">
+			Simplify Your <br /> Budget Control
+		</h1>
 	)
 }
 

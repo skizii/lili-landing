@@ -1,7 +1,7 @@
 import Bubble from "./bubble";
 
 const cardParentClassList = [
-	'absolute',
+	'absolute', 'hidden', 'min-[900px]:block',
 	'p-[16px]', 'w-[300px]',
 	'backdrop-blur-[30px]', 'bg-[#282C32]/[.74]',
 	'rounded-xl', 'border', 'border-solid', 'border-white/[.43]',
@@ -43,7 +43,7 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 	} else {
 		return (
 			<div 
-			className={cardParentClassList.join(' ') + " flex justify-between"}
+			className={cardParentClassList.join(' ') + " min-[900px]:flex justify-between "}
 			style={{top: `${top}px`, left: `${left}px`}}>
 				<div className="flex justify-center">
 				<Bubble size={44} icon={icon}/>
