@@ -34,7 +34,7 @@ const Phone = () => {
 	const isMobile = windowWidth <= 768;
   
 	if (isMobile) {
-		return <Image className="mt-[64px] px-[24px] absolute bottom-0" src={phoneS} alt="phone" width={373}/>;
+		return <Image className="mt-[64px] px-[24px]" src={phoneS} alt="phone" width={373}/>;
 	} else {
 		return (
 		  <div className="relative w-[373px] h-[650px] mt-[30px]">
