@@ -12,7 +12,6 @@ import hamburger from "@/icons/hamburger.svg";
 const Bubbles = () => {
 
 	const windowWidth = useWindowDimensions().width;
-	// const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
 	const bubbleShift = windowWidth > 768 ? 0 : 20;
 
