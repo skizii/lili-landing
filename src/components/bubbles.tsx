@@ -11,17 +11,17 @@ import hamburger from "@/icons/hamburger.svg";
 
 const Bubbles = () => {
 
-	const windowWidth = useWindowDimensions().width;
+	let windowWidth = useWindowDimensions().width;
 
-	const bubbleShift = windowWidth > 768 ? 0 : 20;
+	const shift = windowWidth > 768 ? 0 : 20;
 
 	return (
 		<div className="absolute top-0 left-0 h-full w-full z-10 sm:-z-30">
-			<Bubble size={68} top={10} left={20 - bubbleShift} icon={car}/>
-			<Bubble size={54} top={46} left={30 - bubbleShift} icon={hamburger}/>
-			<Bubble size={58} top={38} left={65 + bubbleShift} icon={buildings}/>
-			<Bubble size={58} top={12} left={75 + bubbleShift} icon={cart}/>
-			<Bubble size={58} top={83} left={72 + bubbleShift} icon={person}/>
+			<Bubble size={68} top={10} left={20 - shift} icon={car}/>
+			<Bubble size={54} top={46} left={30 - shift} icon={hamburger}/>
+			<Bubble size={58} top={38} left={65 + shift} icon={buildings}/>
+			<Bubble size={58} top={12} left={75 + shift} icon={cart}/>
+			<Bubble size={58} top={83} left={72 + shift} icon={person}/>
 		</div>
 	)
 }
