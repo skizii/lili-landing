@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plus_jakarta_sans.variable} bg-main bg-bottom h-screen bg-net-pattern bg-no-repeat bg-repeat-x text-white`}>{children}</body>
+      <body className={`${plus_jakarta_sans.variable} bg-main bg-bottom bg-net-pattern bg-no-repeat bg-repeat-x text-white`}>{children}</body>
     </html>
   );
 }

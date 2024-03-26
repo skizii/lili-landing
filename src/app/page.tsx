@@ -9,8 +9,8 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className='relative h-screen overflow-hidden font-sans'>
-      <div className={`relative flex flex-col justify-between md:justify-normal items-center max-w-[1200px] min-h-screen my-0 mx-auto text-center`}>
+    <main className='relative h-dvh overflow-hidden font-sans'>
+      <div className={`relative flex flex-col justify-between md:justify-normal items-center max-w-[1200px] min-h-full my-0 mx-auto text-center`}>
         <Logo/>
         <Title/>
         <Subtitle/>
