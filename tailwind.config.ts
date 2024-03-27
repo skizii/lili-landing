@@ -10,7 +10,6 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'net-pattern': 'url("../img/bg-pattern.svg")',
-        'left-pattern': 'url("../img/left-pattern.svg")'
       },
       fontFamily: {
         sans: ['var(--font-plus-jakarta-sans)']

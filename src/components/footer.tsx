@@ -7,7 +7,8 @@ const Footer = () => {
 		flex justify-between items-center
 		backdrop-blur-[21px]
 		lg:backdrop-blur-none
-		text-xs text-[#BEBFC1] leading-semibold">
+		text-xs text-[#BEBFC1] leading-semibold
+		z-50">
 			<p>&copy; 2024 lili</p>
 			<div>
 				<a className="mr-[24px]" href="#">Privacy Policy</a>
