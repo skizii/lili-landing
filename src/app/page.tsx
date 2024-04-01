@@ -7,6 +7,8 @@ import Phone from "@/components/phone";
 import Bubbles from "@/components/bubbles";
 import Footer from "@/components/footer";
 
+import YMetrika from "./YMetrika";
+
 export default function Home() {
   return (
     <main className='relative h-dvh overflow-hidden font-sans'>
@@ -21,6 +23,7 @@ export default function Home() {
       <PatternLeft/>
       <PatternRight/>
       <Footer/>
+      <YMetrika counter={96878953}/>
     </main>
   );
 }
