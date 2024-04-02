@@ -5,14 +5,14 @@ import useWindowDimensions from '@/hooks/useWindowDimentions';
 
 import logo from '../img/logo.svg';
 
-const Logo = () => {
+const Logo = ({className}: {className?: string}) => {
   
 	const windowWidth = useWindowDimensions().width;
 	const isMobile = windowWidth <= 768;
 
 	return (
 		<Image 
-		className="mx-auto pt-[30px]"
+		className={className}
 		src={logo}
 		alt="lili logo"
 		width={isMobile ? 43 : 74}

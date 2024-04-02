@@ -9,9 +9,10 @@ const Footer = () => {
 		lg:backdrop-blur-none
 		text-xs text-[#BEBFC1] leading-semibold
 		z-50">
-			<p>&copy; 2024 lili</p>
+			<p className="text-xs mb-0">&copy; 2024 lili</p>
 			<div>
-				<a className="mr-[24px]" href="#">Privacy Policy</a>
+				<a className="mr-[24px]" href="/privacy-policy">Privacy Policy</a>
+				<a className="mr-[24px]" href="/terms-and-conditions">Terms & Conditions</a>
 				<a href="mailto:hello@lili.com">hello@lili.com</a>
 			</div>
 		</footer>

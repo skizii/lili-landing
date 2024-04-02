@@ -8,6 +8,7 @@ export function YMetrika({counter}: {counter: number}) {
   const pathName = usePathname();
   const searchParams = useSearchParams();
   useEffect(() => {
+    // @ts-ignore
     ym(counter, "hit", window.location.href);
   }, [pathName, searchParams, counter]);
   return (

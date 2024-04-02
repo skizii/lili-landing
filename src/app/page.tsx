@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className='relative h-dvh overflow-hidden font-sans'>
       <div className={`relative flex flex-col justify-between md:justify-normal items-center max-w-[1200px] min-h-full my-0 mx-auto text-center`}>
-        <Logo/>
+        <Logo className='pt-[30px]'/>
         <Title/>
         <Subtitle/>
         <StoreLink link="#"/>
