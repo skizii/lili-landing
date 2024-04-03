@@ -4,7 +4,6 @@ import Header from "@/components/header";
 
 export default function PrivacyPolicy() {
   return (
-	<Suspense>
 		<div className="relative container my-0 px-8 font-sans pb-[40px] pt-[4.8rem]">
 		<Header className="px-8"></Header>
 		<h1 className="mt-4 mb-5">Terms and Conditions</h1>
@@ -93,6 +92,5 @@ export default function PrivacyPolicy() {
 				<li>By email: mtsymlov@gmail.com</li>
 			</ul>
 		</div>
-	</Suspense>
   );
 }
