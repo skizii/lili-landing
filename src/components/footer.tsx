@@ -7,12 +7,12 @@ const Footer = () => {
 		flex justify-between items-center
 		backdrop-blur-[21px]
 		lg:backdrop-blur-none
-		text-xs text-[#BEBFC1] leading-semibold
+		text-[10px] min-[375px]:text-xs text-[#BEBFC1] leading-semibold
 		z-50">
-			<p className="text-xs mb-0">&copy; 2024 lili</p>
-			<div>
-				<a className="mr-[24px]" href="/privacy-policy">Privacy Policy</a>
-				<a className="mr-[24px]" href="/terms-and-conditions">Terms & Conditions</a>
+			<p className="mb-0">&copy; 2024 lili</p>
+			<div className="flex sm:block gap-[10px]">
+				<a className="sm:mr-[24px]" href="/privacy-policy">Privacy Policy</a>
+				<a className="sm:mr-[24px]" href="/terms-and-conditions">Terms & Conditions</a>
 				<a href="mailto:hello@lili.com">hello@lili.com</a>
 			</div>
 		</footer>
