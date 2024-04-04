@@ -3,11 +3,11 @@
 import Bubble from "./bubble";
 import useWindowDimensions from "@/hooks/useWindowDimentions";
 
-import buildings from "@/icons/buildings.svg";
-import car from "@/icons/car.svg";
-import cart from "@/icons/shoppingCart.svg";
-import person from "@/icons/person.svg";
-import hamburger from "@/icons/hamburger.svg";
+import buildings from "@/app/icons/buildings.svg";
+import car from "@/app/icons/car.svg";
+import cart from "@/app/icons/shoppingCart.svg";
+import person from "@/app/icons/person.svg";
+import hamburger from "@/app/icons/hamburger.svg";
 
 const Bubbles = () => {
 

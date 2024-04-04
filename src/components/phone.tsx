@@ -7,8 +7,8 @@ import Qr from "./qr";
 import useWindowDimensions from "@/hooks/useWindowDimentions";
 
 import phoneS from '@/img/phone_S.svg';
-import cup from "@/icons/cup.svg";
-import hamburger from "@/icons/hamburger.svg";
+import cup from "@/app/icons/cup.svg";
+import hamburger from "@/app/icons/hamburger.svg";
 
 const Phone = () => {
 	const containerRef = useRef<HTMLDivElement>(null);

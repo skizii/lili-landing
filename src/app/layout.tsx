@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { lazy } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
