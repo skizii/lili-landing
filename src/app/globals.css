@@ -2,38 +2,38 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-h1 {
+.text-layout h1 {
 	font-size: 28px;
 	line-height: 2rem;
 	font-weight: 400;
 }
 
-h2 {
+.text-layout h2 {
 	margin-top: 40px;
 	margin-bottom: 1rem;
 	font-size: 1.2rem;
 	font-weight: 800;
 }
 
-h3 {
+.text-layout h3 {
 	margin-top: 40px;
 	margin-bottom: 1rem;
 	font-weight: 600;
 	font-size: 16px;
 }
 
-h4 {
+.text-layout h4 {
 	margin-bottom: 10px;
 	font-weight: 500;
 }
 
-p {
+.text-layout p {
 	margin-bottom: 1rem;
 	font-size: 14px;
 	font-weight: 400;
 }
 
-ul {
+.text-layout ul {
 	margin-top: 0;
 	list-style-type: disc;
     margin-block-start: 1em;
@@ -45,12 +45,12 @@ ul {
 	font-weight: 400;
 }
 
-ul p {
+.text-layout ul p {
 	line-height: 2;
 	margin-bottom: 0;
 }
 
-li {
+.text-layout li {
 	margin-top: 0;
 	font-size: inherit;
 	line-height: 2;

@@ -1,10 +1,8 @@
-import { Suspense } from "react";
-
 import Header from "@/components/header";
 
 export default function PrivacyPolicy() {
   return (
-		<div className="relative container my-0 px-8 font-sans pb-[40px] pt-[4.8rem]">
+		<div className="relative container my-0 px-8 font-sans pb-[40px] pt-[4.8rem] text-layout">
 		<Header className="px-8"></Header>
 		<h1 className="mt-4 mb-5">Terms and Conditions</h1>
 			<p>Last updated: April 02, 2024</p>

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
+import { lazy } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-import YandexMetrika from "./lib/yandex-metrika";
+// import YandexMetrika from "./lib/yandex-metrika";
+
+const YMet = lazy(() => import("./lib/yandex-metrika"));
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -49,9 +51,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <Suspense>
-        <YandexMetrika />
-      </Suspense>
+      <YMet />
       <body className={`${plus_jakarta_sans.variable} bg-main bg-bottom bg-net-pattern bg-no-repeat bg-repeat-x text-white`}>{children}</body>
     </html>
   );
