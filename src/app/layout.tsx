@@ -13,9 +13,17 @@ const plus_jakarta_sans = Plus_Jakarta_Sans({
   variable: '--font-plus-jakarta-sans'
 })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "lili",
   description: "Simplify Your Budget Control",
+  icons: {
+    icon: 'icons/icon.svg',
+    apple: 'icons/apple-icon.png',
+    other: {
+      rel: 'icon',
+      url: 'icons/favicon.ico',
+    }
+  },
 };
 
 export default function RootLayout({
@@ -51,7 +59,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <YMet />
+        <YMet />
       <body className={`${plus_jakarta_sans.variable} bg-main bg-bottom bg-net-pattern bg-no-repeat bg-repeat-x text-white`}>{children}</body>
     </html>
   );
