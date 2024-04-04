@@ -1,5 +1,9 @@
 import Header from "@/components/header";
 
+export const metadata = {
+	title: 'Terms & Conditions - lili'
+}
+
 export default function PrivacyPolicy() {
   return (
 		<div className="relative container my-0 px-8 font-sans pb-[40px] pt-[4.8rem] text-layout">
