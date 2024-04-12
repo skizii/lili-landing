@@ -11,8 +11,8 @@ const plus_jakarta_sans = Plus_Jakarta_Sans({
 })
 
 export const metadata = {
-  title: "lili",
-  description: "Simplify Your Budget Control",
+  title: "Lili: Expense & Money Tracker",
+  description: "Explore and analyze your budget with a very intuitive interface",
   icons: {
     icon: 'icons/icon.svg',
     apple: 'icons/apple-icon.png',

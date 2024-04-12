@@ -1,7 +1,7 @@
 import Header from "@/components/header";
 
 export const metadata = {
-	title: 'Terms & Conditions - lili'
+	title: 'Terms and conditions, Lili - Expense Tracker'
 }
 
 export default function PrivacyPolicy() {

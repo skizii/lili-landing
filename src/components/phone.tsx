@@ -2,12 +2,15 @@
 
 import { useRef, useEffect, useState } from 'react';
 import Image from "next/image";
+
+import useWindowDimensions from "@/hooks/useWindowDimentions";
+
 import Card from "./card";
 import Qr from "./qr";
-import useWindowDimensions from "@/hooks/useWindowDimentions";
 
 import phoneS from '@/img/phone_S.svg';
 import cup from "@/app/icons/cup.svg";
+import wine from "@/app/icons/wine.svg";
 import hamburger from "@/app/icons/hamburger.svg";
 
 const Phone = () => {
@@ -46,8 +49,8 @@ const Phone = () => {
 				{phoneVisibleHeight > 0 && <Qr top={phoneVisibleHeight / 2} />}
 			  </div>
 			)}
-			<Card icon={hamburger} category="Food delivery" top={showPhone ? 25 : 20} left={331} spent={96} />
-			<Card icon={cup} category="Breakfast" top={showPhone ? 148 : 80} left={-258} spent={25.16} split="Bogdan" total={57} comment="We went to the restaurant after a morning jog" />
+			<Card icon={wine} category="Restaurants" top={showPhone ? 25 : 20} left={331} spent={47} />
+			<Card icon={cup} category="Coffee" top={showPhone ? 148 : 80} left={-258} spent={7.5} split="Rachel" total={15} comment="Central  Perk" />
 		  </div>
 		);
 	}

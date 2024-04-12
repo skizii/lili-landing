@@ -1,5 +1,5 @@
 import Image from "next/image";
-import qr from "@/img/qr.svg";
+import qr from "@/img/qr.png";
 
 const Qr = ({top}: {top: number}) => {
 	return (

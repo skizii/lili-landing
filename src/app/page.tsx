@@ -12,8 +12,9 @@ export default function Home() {
     <main className='relative h-dvh overflow-hidden font-sans'>
       <div className={`relative flex flex-col justify-between md:justify-normal items-center max-w-[1200px] min-h-full my-0 mx-auto text-center`}>
         <Logo className='pt-[30px]'/>
-        <Title/>
-        <Subtitle/>
+        {/* @ts-ignore */}
+        <Title>Take control <br/> of your money.</Title>
+        <Subtitle>Explore and analyze your budget with a very intuitive interface</Subtitle>
         <StoreLink link="#"/>
         <Phone/>
       </div>

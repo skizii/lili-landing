@@ -24,7 +24,7 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 					<Bubble size={44} icon={icon}/>
 					<div className="ml-[12px]">
 						<p className="text-left flex items-center justify-left">{category}</p>
-						<p className="text-sm text-left flex items-center justify-left text-[#AAABAB]">w/{split}</p>
+						<p className="text-sm text-left flex items-center justify-left text-[#AAABAB]">Me + {split}</p>
 					</div>
 					</div>
 					<div>
