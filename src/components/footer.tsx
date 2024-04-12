@@ -13,7 +13,7 @@ const Footer = () => {
 			<div className="flex sm:block gap-[10px]">
 				<a className="sm:mr-[24px]" href="/privacy-policy">Privacy Policy</a>
 				<a className="sm:mr-[24px]" href="/terms-and-conditions">Terms & Conditions</a>
-				<a href="mailto:hello@lili.com">hello@lili.com</a>
+				<a href="mailto:mtsymlov@gmail.com">mtsymlov@gmail.com</a>
 			</div>
 		</footer>
 	)
