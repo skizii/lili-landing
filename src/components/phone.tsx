@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from 'react';
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 import useWindowDimensions from "@/hooks/useWindowDimentions";
 
@@ -17,6 +18,8 @@ const Phone = () => {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const { height: windowHeight, width: windowWidth } = useWindowDimensions();
 	const [phoneVisibleHeight, setPhoneVisibleHeight] = useState(0);
+
+	const t = useTranslations('Cards');
   
 	useEffect(() => {
 	  const element = containerRef.current;
@@ -49,8 +52,8 @@ const Phone = () => {
 				{phoneVisibleHeight > 0 && <Qr top={phoneVisibleHeight / 2} />}
 			  </div>
 			)}
-			<Card icon={wine} category="Restaurants" top={showPhone ? 25 : 20} left={331} spent={47} />
-			<Card icon={cup} category="Coffee" top={showPhone ? 148 : 80} left={-258} spent={7.5} split="Rachel" total={15} comment="Central  Perk" />
+			<Card icon={wine} category={t('restaraunt.category')} top={showPhone ? 25 : 20} left={331} spent={47} />
+			<Card icon={cup} category={t('coffee.category')} top={showPhone ? 148 : 80} left={-258} spent={7.5} split={t('coffee.split')} total={15} comment={t('coffee.comment')} />
 		  </div>
 		);
 	}

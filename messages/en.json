@@ -1,5 +1,23 @@
 {
   "Index": {
-    "title": "Take control of your money"
+    "title": "Take control of your money",
+    "subtitle": "Explore and analyze your budget with a very intuitive interface"
+  },
+  "Cards": {
+    "coffee": {
+      "category": "Coffee",
+      "split": "Rachel",
+      "comment": "Central Perk"
+    },
+    "restaraunt": {
+      "category": "restaraunt"
+    },
+    "out": "out of",
+    "me": "Me"
+  },
+  "Footer": {
+    "copyright": "2024 Mikhail Tcymlov",
+    "privacy-policy": "Privacy Policy",
+    "terms-and-conditions": "Terms & Conditions"
   }
 }

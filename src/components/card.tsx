@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl';
+
 import Bubble from "./bubble";
 
 const cardParentClassList = [
@@ -16,6 +18,9 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 				split?: string,
 				total?: number,
 				comment?: string}) => {
+	
+	const t = useTranslations('Cards');
+
 	if (split) {
 		return (
 			<div className={cardParentClassList.join(' ')} style={{top: `${top}px`, left: `${left}px`}}>
@@ -24,12 +29,12 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 					<Bubble size={44} icon={icon}/>
 					<div className="ml-[12px]">
 						<p className="text-left flex items-center justify-left">{category}</p>
-						<p className="text-sm text-left flex items-center justify-left text-[#AAABAB]">Me + {split}</p>
+						<p className="text-sm text-left flex items-center justify-left text-[#AAABAB]">{t('me')} + {split}</p>
 					</div>
 					</div>
 					<div>
 						<p className="flex items-center justify-end">-${spent.toFixed(2)}</p>
-						<p className="text-sm text-left flex items-center justify-end text-[#AAABAB]">out of -${total}</p>
+						<p className="text-sm text-left flex items-center justify-end text-[#AAABAB]">{t('out')} -${total}</p>
 					</div>
 				</div>
 				<p className="pl-[15px] pr-[5px] py-[10px] leading-5 font-normal text-left block relative w-full rounded-xl rounded-tl-none bg-[#5E5E5F]
