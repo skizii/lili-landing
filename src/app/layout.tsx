@@ -5,7 +5,7 @@ import "./globals.css";
 import YandexMetrika from "./lib/yandex-metrika";
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic-ext'],
   weight: ['400', '500', '600', '800'],
   variable: '--font-plus-jakarta-sans'
 })
