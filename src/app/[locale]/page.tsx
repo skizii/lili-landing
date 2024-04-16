@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+
 import Logo from "@/components/logo";
 import {PatternLeft, PatternRight} from "@/components/patterns";
 import Title from "@/components/title";
@@ -10,6 +11,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   const t = useTranslations('Index');
+
   return (
     <main className='relative h-dvh overflow-hidden font-sans'>
       <div className={`relative flex flex-col justify-between md:justify-normal items-center max-w-[1200px] min-h-full my-0 mx-auto text-center`}>

@@ -1,6 +1,10 @@
 {
+  "LocaleLayout": {
+    "title": "Lili: Expense & Money Tracker",
+    "description": "Explore and analyze your budget with a very intuitive interface"
+  },
   "Index": {
-    "title": "Take control of your money",
+    "title": "Take control\nof your money",
     "subtitle": "Explore and analyze your budget with a very intuitive interface"
   },
   "Cards": {
@@ -10,7 +14,7 @@
       "comment": "Central Perk"
     },
     "restaraunt": {
-      "category": "restaraunt"
+      "category": "Restaraunt"
     },
     "out": "out of",
     "me": "Me"

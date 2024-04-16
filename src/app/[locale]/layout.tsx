@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import {getTranslations} from 'next-intl/server';
+import {locales} from '@/i18n';
 
 import "../globals.css";
 
@@ -13,29 +15,43 @@ const plus_jakarta_sans = Plus_Jakarta_Sans({
   variable: '--font-plus-jakarta-sans'
 });
 
-export const metadata = {
-  title: "Lili: Expense & Money Tracker",
-  description: "Explore and analyze your budget with a very intuitive interface",
-  icons: {
-    icon: 'icons/icon.svg',
-    apple: 'icons/apple-icon.png',
-    other: {
-      rel: 'icon',
-      url: 'icons/favicon.ico',
-    }
-  },
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type Props = {
   children: React.ReactNode;
-}>) {
+  params: {locale: string};
+};
+
+export async function generateMetadata({
+  params: {locale}
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({locale, namespace: 'LocaleLayout'});
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    icons: {
+      icon: 'icons/icon.svg',
+      apple: 'icons/apple-icon.png',
+      other: {
+        rel: 'icon',
+        url: 'icons/favicon.ico',
+      }
+    }
+  };
+}
+
+export default function LocaleLayout({
+  children,
+  params: {locale}
+}: Props) {
   const messages = useMessages();
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <html lang="en">
+      <html lang={locale}>
         <head>
           <YMetricaHead/>
         </head>
