@@ -18,8 +18,9 @@ const Card = ({icon, category, top, left, spent, split, total, comment}:
 				split?: string,
 				total?: number,
 				comment?: string}) => {
-	
+
 	const t = useTranslations('Cards');
+				
 
 	if (split) {
 		return (

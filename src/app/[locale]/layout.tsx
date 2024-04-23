@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import {getTranslations} from 'next-intl/server';
-import {locales} from '@/i18n';
+import { getTranslations } from 'next-intl/server';
+import { locales, setRequestLocale } from '@/i18n';
 
 import "../globals.css";
 
@@ -19,7 +19,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({locale}));
 };
 
-type Props = {
+export type Props = {
   children: React.ReactNode;
   params: {locale: string};
 };
@@ -48,6 +48,7 @@ export default function LocaleLayout({
   params: {locale}
 }: Props) {
   const messages = useMessages();
+  setRequestLocale(locale);
 
   return (
     <NextIntlClientProvider messages={messages}>

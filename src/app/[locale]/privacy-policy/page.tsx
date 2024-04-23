@@ -1,3 +1,6 @@
+import { setRequestLocale } from '@/i18n';
+import { useLocale } from 'next-intl';
+
 import Header from "@/components/header";
 
 export const metadata = {
@@ -5,6 +8,11 @@ export const metadata = {
 }
 
 export default function PrivacyPolicy() {
+
+  const locale = useLocale();
+
+  setRequestLocale(locale);
+
   return (
       <div className="relative container my-0 px-8 font-sans pb-[40px] pt-[4.8rem] text-layout">
         <Header className="px-8"></Header>

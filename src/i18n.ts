@@ -1,5 +1,5 @@
 import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
+import { getRequestConfig, unstable_setRequestLocale } from 'next-intl/server';
 
 // Can be imported from a shared config
 export const locales = ['en', 'ru'];
@@ -12,3 +12,11 @@ export default getRequestConfig(async ({locale}) => {
     messages: (await import(`../messages/${locale}.json`)).default
   };
 });
+
+export function setRequestLocale(locale: string): void {
+  if (locales.includes(locale)) {
+    unstable_setRequestLocale(locale);
+  } else {
+    console.error(`Unsupported locale: ${locale}`);
+  }
+};

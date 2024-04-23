@@ -1,4 +1,5 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { setRequestLocale } from '@/i18n';
 
 import Logo from "@/components/logo";
 import {PatternLeft, PatternRight} from "@/components/patterns";
@@ -10,7 +11,11 @@ import Bubbles from "@/components/bubbles";
 import Footer from "@/components/footer";
 
 export default function Home() {
+
   const t = useTranslations('Index');
+  const locale = useLocale();
+  
+  setRequestLocale(locale);
 
   return (
     <main className='relative h-dvh overflow-hidden font-sans'>

@@ -12,7 +12,6 @@ import Qr from "./qr";
 import phoneS from '@/img/phone_S.svg';
 import cup from "@/app/icons/cup.svg";
 import wine from "@/app/icons/wine.svg";
-import hamburger from "@/app/icons/hamburger.svg";
 
 const Phone = () => {
 	const containerRef = useRef<HTMLDivElement>(null);

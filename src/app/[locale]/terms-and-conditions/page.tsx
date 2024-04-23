@@ -1,11 +1,20 @@
+import { setRequestLocale } from '@/i18n';
+import { useLocale } from 'next-intl';
+
 import Header from "@/components/header";
+
 
 export const metadata = {
 	title: 'Terms and conditions, Lili - Expense Tracker'
 }
 
 export default function PrivacyPolicy() {
-  return (
+	
+	const locale = useLocale();
+
+	setRequestLocale(locale);
+
+ 	return (
 		<div className="relative container my-0 px-8 font-sans pb-[40px] pt-[4.8rem] text-layout">
 		<Header className="px-8"></Header>
 		<h1 className="mt-4 mb-5">Terms and Conditions</h1>
