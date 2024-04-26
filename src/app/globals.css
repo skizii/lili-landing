@@ -3,55 +3,55 @@
 @import 'tailwindcss/utilities';
 
 .text-layout h1 {
-	font-size: 28px;
-	line-height: 2rem;
-	font-weight: 400;
+  font-size: 28px;
+  line-height: 2rem;
+  font-weight: 400;
 }
 
 .text-layout h2 {
-	margin-top: 40px;
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
-	font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
 .text-layout h3 {
-	margin-top: 40px;
-	margin-bottom: 1rem;
-	font-weight: 600;
-	font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .text-layout h4 {
-	margin-bottom: 10px;
-	font-weight: 500;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .text-layout p {
-	margin-bottom: 1rem;
-	font-size: 14px;
-	font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .text-layout ul {
-	margin-top: 0;
-	list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-	font-size: 14px;
-	font-weight: 400;
+  margin-top: 0;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .text-layout ul p {
-	line-height: 2;
-	margin-bottom: 0;
+  line-height: 2;
+  margin-bottom: 0;
 }
 
 .text-layout li {
-	margin-top: 0;
-	font-size: inherit;
-	line-height: 2;
+  margin-top: 0;
+  font-size: inherit;
+  line-height: 2;
 }

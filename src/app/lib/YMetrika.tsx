@@ -1,18 +1,18 @@
-"use client";
+'use client'
 
-import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
-import Script from "next/script";
+import { useEffect } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
+import Script from 'next/script'
 
-export function YMetrika({counter}: {counter: number}) {
-  const pathName = usePathname();
-  const searchParams = useSearchParams();
+export function YMetrika({ counter }: { counter: number }) {
+  const pathName = usePathname()
+  const searchParams = useSearchParams()
   useEffect(() => {
     // @ts-ignore
-    ym(counter, "hit", window.location.href);
-  }, [pathName, searchParams, counter]);
+    ym(counter, 'hit', window.location.href)
+  }, [pathName, searchParams, counter])
   return (
-    <Script id="yandex-metrika">
+    <Script id='yandex-metrika'>
       {`
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();
@@ -28,7 +28,7 @@ export function YMetrika({counter}: {counter: number}) {
         });    
       `}
     </Script>
-  );
+  )
 }
 
-export default YMetrika;
+export default YMetrika
