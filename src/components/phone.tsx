@@ -58,16 +58,16 @@ const Phone = () => {
           category={t('restaraunt.category')}
           top={showPhone ? 25 : 20}
           left={331}
-          spent={47}
+          spent={t('restaraunt.total')}
         />
         <Card
           icon={cup}
           category={t('coffee.category')}
           top={showPhone ? 148 : 80}
           left={-258}
-          spent={7.5}
+          spent={t('coffee.spent')}
           split={t('coffee.split')}
-          total={15}
+          total={t('coffee.total')}
           comment={t('coffee.comment')}
         />
       </div>

@@ -31,9 +31,9 @@ const Card = ({
   category: string
   top: number
   left: number
-  spent: number
+  spent: string
   split?: string
-  total?: number
+  total?: string
   comment?: string
 }) => {
   const t = useTranslations('Cards')
@@ -52,9 +52,13 @@ const Card = ({
             </div>
           </div>
           <div>
-            <p className='flex items-center justify-end'>-${spent.toFixed(2)}</p>
+            <p className='flex items-center justify-end'>
+              -{spent}
+              {t('currency')}
+            </p>
             <p className='text-sm text-left flex items-center justify-end text-[#AAABAB]'>
-              {t('out')} -${total}
+              {t('out')} {total}
+              {t('currency')}
             </p>
           </div>
         </div>
@@ -76,7 +80,10 @@ const Card = ({
           <Bubble size={44} icon={icon} />
           <p className='ml-[12px] text-left flex items-center justify-left'>{category}</p>
         </div>
-        <p className='flex items-center justify-center'>-${spent.toFixed(2)}</p>
+        <p className='flex items-center justify-center'>
+          -{spent}
+          {t('currency')}
+        </p>
       </div>
     )
   }

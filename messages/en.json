@@ -11,13 +11,17 @@
     "coffee": {
       "category": "Coffee",
       "split": "Rachel",
-      "comment": "Central Perk"
+      "comment": "Central Perk",
+      "total": "7.5",
+      "spent": "15"
     },
     "restaraunt": {
-      "category": "Restaraunt"
+      "category": "Restaurant",
+      "total": "47"
     },
     "out": "out of",
-    "me": "Me"
+    "me": "Me",
+    "currency": " $"
   },
   "Footer": {
     "copyright": "2024 Mikhail Tcymlov",

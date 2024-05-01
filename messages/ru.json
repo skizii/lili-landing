@@ -5,22 +5,26 @@
   },
   "Index": {
     "title": "Возьми финансы\nпод контроль",
-    "subtitle": "Исследуй и анализируй свой бюджет с понятным интерфейсом"
+    "subtitle": "Вноси траты и следи за бюджетом "
   },
   "Cards": {
     "coffee": {
       "category": "Кофе",
       "split": "Рэйчел",
-      "comment": "Central Perk"
+      "comment": "Central Perk",
+      "total": "450",
+      "spent": "225"
     },
     "restaraunt": {
-      "category": "Ресторан"
+      "category": "Ресторан",
+      "total": "950"
     },
     "out": "из",
-    "me": "Я"
+    "me": "Я",
+    "currency": " ₽"
   },
   "Footer": {
-    "copyright": "2024 Михаил Цымлов",
+    "copyright": "2024 Mikhail Tcymlov",
     "privacy-policy": "Политика конфиденциальности ",
     "terms-and-conditions": "Условия использования"
   }
