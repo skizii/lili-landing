@@ -15,11 +15,6 @@ const Bubbles = () => {
 
   return (
     <div className='absolute top-0 left-0 h-full w-full z-10 sm:-z-30'>
-      <img
-        src={
-          'https://www.cultkits.com/cdn/shop/files/image00106_2e7ee582-69d0-4df4-9257-65c0b84f9aab.jpg?v=1732894915&width=360'
-        }
-      />
       <Bubble size={68} top={3} left={20 - shift} icon={car} />
       <Bubble size={54} top={46} left={30 - shift} icon={hamburger} />
       <Bubble size={58} top={12} left={75 + shift} icon={cart} />
